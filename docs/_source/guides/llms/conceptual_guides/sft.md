@@ -115,7 +115,7 @@ prompts = load_dataset('your_prompts_dataset', split=["train"])
 
 records = [
 	rg.FeedbackRecord(fields={"prompt": record["prompt"]})
-	for record in dataset
+	for record in prompts
 ]
 
 dataset.add_records(records)
